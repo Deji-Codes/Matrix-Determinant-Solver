@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices Determinant Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bars">
+        <input type="button" value="2 X 2 Matrices" onclick="two()">
+        <input type="button" value="3 X 3 Matrices" onclick="three()">
+    </div>
+    <section class="matrix2X2">
+        <section class="container" id="container">
+            <div class="line-1">
+                <input type="text" id="a">
+                <input type="text" id="b">
+            </div>
+            <div class="line-2">
+                <input type="text" id="c">
+                <input type="text" id="d">
+            </div>
+            <h1><u>Solution</u></h1>
+            <br>
+            <div class="answer">
+                <p>The Determinant of the 2 X 2 Matrices above is<br><span id="answer">xxxxx</span></p>
+            </div>
+            <input type="button" value="Solve" id="solve">
+        </section>
+    </section>
+
+    <section class="matrix3X3">
+        <section class="container2" id="container2">
+            <div class="line-a">
+                <input type="text" id="a1">
+                <input type="text" id="a2">
+                <input type="text" id="a3">
+            </div>
+            <div class="line-b">
+                <input type="text" id="b1">
+                <input type="text" id="b2">
+                <input type="text" id="b3">
+            </div>
+            <div class="line-c">
+                <input type="text" id="c1">
+                <input type="text" id="c2">
+                <input type="text" id="c3">
+            </div>
+            <h1><u>Solution</u></h1>
+            <br>
+            <div class="answer">
+                <p>The Determinant of the 3 X 3 Matrices above is<br><span id="answer1">xxxxx</span></p>
+            </div>
+            <input type="button" value="Solve" id="solution">
+        </section>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

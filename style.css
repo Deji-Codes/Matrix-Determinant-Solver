@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, orange 60%, yellow);
+}
+.bars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #fff;
+    background: #000;
+}
+input:nth-child(1){
+    margin-right: 20px;
+}
+input:nth-child(2){
+    margin-left: 20px;
+}
+.matrix2X2,.matrix3X3{
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 50%;
+    position: absolute;
+}
+.container{
+    width: 400px;
+    height: 550px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:inset 5px 10px 15px 5px rgba(52, 48, 48, 0.35),
+                10px 15px 20px 10px rgba(52, 48, 48, 0.6),
+                inset 20px 20px 30px 20px rgba(52, 48, 48, 0.2);
+    position: absolute;
+}
+.container2{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:inset 5px 10px 15px 5px rgba(52, 48, 48, 0.35),
+                10px 15px 20px 10px rgba(52, 48, 48, 0.6),
+                inset 20px 20px 30px 20px rgba(52, 48, 48, 0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+#solve{
+    position: absolute;
+    margin-top: 130%;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5em;
+    background: #12abff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.line-1{
+    margin: 5%;
+}
+.line-2{
+    margin: 5%;
+}
+#a{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #ff12ba;
+    margin-right: 50px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#b{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #ff1212;
+    margin-left: 50px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#c{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #12ff36;
+    margin-right: 50px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#d{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #12fff3;
+    margin-left: 50px;
+    font-size: 2.5em;
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: #0a12ff;
+}
+.answer{
+    text-align: center;
+}
+.answer p{
+    font-size: 20px;
+    font-weight: 600;
+}
+span{
+     font-size: 40px;
+     font-family: cursive;
+     font-weight: bold;
+     
+}
+@media (max-width:760px){
+    #solve{
+        margin-top: 90%;
+    }
+}
+#a1,#a2,#a3{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #ff7700;
+    margin-left: 30px;
+    font-size: 2.5em;
+    text-align: center;
+}
+.line-a{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+#b1,#b2,#b3{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #4dff12;
+    margin-left: 30px;
+    font-size: 2.5em;
+    text-align: center;
+}
+.line-b{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+#c1,#c2,#c3{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #00ff77;
+    margin-left: 30px;
+    font-size: 2.5em;
+    text-align: center;
+}
+.line-c{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+#solution{
+    position: absolute;
+    margin-top: 135%;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5em;
+    background: #12abff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
